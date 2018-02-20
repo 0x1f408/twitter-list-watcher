@@ -53,7 +53,7 @@
   text:
 
 # Configuration for post & check frequency
-# Twitter API limits apps to 15/180 GET requests per 15 minute interval
+# Please note that Twitter has different API limits per action (e.g.: retweeting vs. searching)
 # Rate limiting documentation [Twitter]: https://dev.twitter.com/rest/public/rate-limiting
 "Frequency":
   list_check: 15 # How often we want to pull list content (minutes)
