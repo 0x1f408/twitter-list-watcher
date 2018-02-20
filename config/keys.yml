@@ -1,0 +1,20 @@
+# Access tokens for twitter-list-watcher
+# Make sure this file is included in your .gitignore
+# i.e.: DON'T PUBLISH PRIVATE KEYS
+
+---
+
+# API Access information for our Twitter app
+# To get the below, you'll need to register a new Twitter application at
+# apps.twitter.com, then copy the given keys for that app here.
+
+# Twitter Consumer Key (for Twitter::REST::Client.config.CONSUMER_KEY)
+con_key: ''
+# Twitter API Consumer Secret (For Twitter::REST::Client.config.CONSUMER_SECRET)
+con_sec: ''
+# Twitter API Access Token (For Twitter::REST::Client.config.ACCESS_TOKEN)
+acs_tkn: ''
+# Twitter API Access Secret (For Twitter::REST::Client.config.ACCESS_TOKEN_SECRET
+acs_sec: ''
+
+---

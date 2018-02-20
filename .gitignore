@@ -1,0 +1,11 @@
+# Keys, config files
+# keys.yml
+# config.yml
+Gemfile.lock
+
+# Editors
+.idea
+*.iml
+
+# Logs
+*.log

@@ -1,0 +1,68 @@
+# Configuration options for twitter-list-watcher
+# You'll probably want to add this file to your .gitignore,
+# if you're publishing to a public repository.
+
+# If you need a more specific filter, the 'text' field offers RegEx
+# Read more here: https://ruby-doc.org/core-2.3.3/Regexp.html
+
+---
+
+# Define sources (i.e.: where we want the app to pull content from)
+"Source":
+  # Name of the list (e.g.: "my-example-list")
+  list_name:
+
+  # Owner of the list we're pulling tweets from
+  list_owner:
+
+# Normal-priority keywords to search for
+"Normal":
+  # Hashtags we want to search tweets for
+  hashtags:
+
+  # Users we want to search tweets for
+  # Note that this is who a tweet mentions, and NOT its author.
+  mentions:
+
+  # Sites we want to search for, with regular priority
+  uris:
+
+  # Text we want to search for; accepts RegEx https://ruby-doc.org/core-2.3.3/Regexp.html
+  text:
+
+# Priority keywords to search for - tweets containing the below terms will
+# be added to a priority queue
+"Priority":
+  hashtags:
+
+  mentions:
+
+  uris:
+
+  text:
+
+# Blacklisted content
+# Hard "no" on interacting with anything including the below terms
+"Blacklist":
+  hashtags:
+
+  mentions:
+
+  uris:
+
+  text:
+
+# Configuration for post & check frequency
+# Twitter API limits apps to 15/180 GET requests per 15 minute interval
+# Rate limiting documentation [Twitter]: https://dev.twitter.com/rest/public/rate-limiting
+"Frequency":
+  list_check: 15 # How often we want to pull list content (minutes)
+  queue_post: 30 # How often we want to post from regular queue (minutes)
+  priority_queue_post: 10 # How often we want to post from priority queue (minutes)
+
+# System configuration
+"System":
+  'version': "1.1.0" # Version of this app
+  'error_log': logs/error.log # Location to post error logs to
+
+...
